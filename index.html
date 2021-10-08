@@ -60,9 +60,35 @@
         </div>
     </div>
     <div class="rodape">
-        <button type="button" class="botao">Enviar</button>
+        <button type="button" class="botao" onclick="validar()">Enviar</button>
     </div>
     </form>
+
+    <script>
+         function validar() {
+          var nome = document.getElementById("nome");
+          var sobrenome = document.getElementById("sobrenome");
+          var email = document.getElementById("email");
+          var senha = document.getElementById("senha");
+          var confirmarsenha = document.getElementById("confirmarsenha");
+          var telefone = document.getElementById("telefone");
+          var cep = document.getElementById("cep");
+          var sexo = document.getElementById("sexo");
+          var newsletter = document.getElementById("newsletter").checked;
+
+         
+          if (nome.value == "") {
+            alert("Nome não informado");
+            nome.focus();
+            return;
+          }
+          if (sobrenome.value == "") {
+            alert("Sobrenome não informado");
+            sobrenome.focus();
+            return;
+          }
+        }
+    </script>
 
 
     
