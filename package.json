@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^2.0.1",
+    "mysql": "github:mysqljs/mysql",
+    "nodemon": "^2.0.14"
+  }
+}
